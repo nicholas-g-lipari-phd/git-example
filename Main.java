@@ -2,6 +2,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        VideoPlayer player = new VideoPlayer();
+        // player.setDefaultText();
+        Video v = new Video( VideoPlayer.WIDTH, VideoPlayer.HEIGHT, .5 );
+        v.addStringFrames("Testing.Testing. One Two Three. Testing");
+        player.play(v);
+
         ServerThread st = new ServerThread();
         //System.out.println("ServerThread listening on tcp/" + st.getPort());
 
