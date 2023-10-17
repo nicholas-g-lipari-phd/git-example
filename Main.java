@@ -7,8 +7,8 @@ public class Main {
 
         Client c = new Client(st.getAddress(), st.getPort());
 
-        //System.out.println("[C] " + c.readFromServer());
-        c.sendToServer("test");
+        System.out.println("[C] " + c.readFromServer());
+        //c.sendToServer("test");
 
         //System.out.println("[C] " + c.readFromServer());
 

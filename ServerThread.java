@@ -51,8 +51,8 @@ public class ServerThread {
 
         //Only one will work in the same instance
         
-        //sendServerInfo(socket);
-        echoToConsole(socket);
+        sendServerInfo(socket);
+        //echoToConsole(socket);
     }
 
     public void sendServerInfo(Socket socket) {
